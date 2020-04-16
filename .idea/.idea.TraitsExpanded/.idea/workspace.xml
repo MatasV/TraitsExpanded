@@ -8,7 +8,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/TraitsExpanded/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/TraitsExpandedMain.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TraitsExpanded/TraitsExpandedMain.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1adHrr21b48hqqz2QiyyVcCOtok" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587058751956</updated>
-      <workItem from="1587058756083" duration="249000" />
+      <workItem from="1587058756083" duration="1385000" />
     </task>
     <servers />
   </component>
@@ -55,9 +62,13 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="WindowStateProjectService">
-    <state x="461" y="163" key="SettingsEditor" timestamp="1587058797918">
+    <state x="752" y="390" key="Github.ShareDialog" timestamp="1587060102196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587058797918" />
+    <state x="752" y="390" key="Github.ShareDialog/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587060102196" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1587059877879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587059877879" />
   </component>
 </project>
