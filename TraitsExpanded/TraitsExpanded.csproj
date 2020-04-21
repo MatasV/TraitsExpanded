@@ -14,6 +14,12 @@
   <ItemGroup>
     <Content Update="SubModule.xml" />
   </ItemGroup>
+  <!-- Avoid copying dependencies to local output folder -->
+  <ItemDefinitionGroup>
+    <Reference>
+      <Private>False</Private>
+    </Reference>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="SandBox.GauntletUI">
       <HintPath>$(SandboxModuleBinRoot)\SandBox.GauntletUI.dll</HintPath>
@@ -145,17 +151,19 @@
       <HintPath>$(GameBinRoot)\TaleWorlds.TwoDimension.Standalone.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <!-- Run should launch bannerlord and include native plus this mod -->
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(GameBinRoot)\Bannerlord.exe</StartProgram>
+    <StartArguments>/singleplayer _MODULES_*Native*SandBoxCore*SandBox*StoryMode*$(ModName)*_MODULES_</StartArguments>
+    <StartWorkingDirectory>$(GameBinRoot)</StartWorkingDirectory>
+  </PropertyGroup>
   <!-- Friendly error message in case someone forgets to set GameBinRoot in their Local -->
   <!-- todo: see if I can get this to run before any references are loaded -->
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Error Text="Game install directory not defined. Check that your LocalConfiguration.props exists and sets the GameBinRoot property correctly. See: LocalConfiguration.props.example" Condition="('$(GameBinRoot)' == '')" />
     <Error Text="Game install directory '$(GameBinRoot)' does not exist. Please define the property GameBinRoot in $(LocalConfigurationFile) to match the local Bannerlord installation directory on your machine." Condition="('$(GameBinRoot)' != '') AND !Exists($(GameBinRoot))" />
   </Target>
-  <ItemDefinitionGroup>
-    <Reference>
-      <Private>False</Private>
-    </Reference>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <AssembliesToCopy Include="$(OutputPath)\*.dll" />
   </ItemGroup>
