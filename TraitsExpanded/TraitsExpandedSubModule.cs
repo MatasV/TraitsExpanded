@@ -10,7 +10,7 @@ namespace TraitsExpanded
 
 	    protected override void OnApplicationTick(float dt)
 	    {
-		    TraitSystemBehavior.Tick();
+		    traitSystemBehavior.Tick();
 	    }
 
 	    /* Executed when game is loaded or initially started */
