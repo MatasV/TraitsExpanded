@@ -151,6 +151,10 @@
       <HintPath>$(GameBinRoot)\TaleWorlds.TwoDimension.Standalone.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Traits" />
+    <Folder Include="TraitSets" />
+  </ItemGroup>
   <!-- Run should launch bannerlord and include native plus this mod -->
   <PropertyGroup>
     <StartAction>Program</StartAction>

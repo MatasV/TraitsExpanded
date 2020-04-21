@@ -7,13 +7,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/TraitsExpanded/TraitsExpandedMain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/Interfaces/ITrait.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/TraitSystemBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/MissionStatusInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE88AFFE-5359-4941-9A68-E4FC007D6B5E/04/961d0dab/TickManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/CampaignStatusInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/NPCRestrictionEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/Interfaces/ITraitSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/TraitsExpandedSubModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/e1/ef4156e5/Path.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/02/96746ca9/BackstoryCampaignBehavior.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TraitsExpanded/TraitsExpandedMain.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/ITrait.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/NPCRestrictionEnum.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/ITraitSet.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/CampaignStatusInfo.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/MissionStatusInfo.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/TraitsExpandedSubModule.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/TraitSystemBehavior.cs" />
       </list>
     </option>
   </component>
@@ -53,22 +72,49 @@
       <option name="presentableId" value="Default" />
       <updated>1587058751956</updated>
       <workItem from="1587058756083" duration="1385000" />
+      <workItem from="1587409643652" duration="1527000" />
+      <workItem from="1587487715033" duration="510000" />
+      <workItem from="1587488279319" duration="31000" />
+      <workItem from="1587488413103" duration="155000" />
+      <workItem from="1587488581791" duration="336000" />
+      <workItem from="1587488936619" duration="422000" />
+      <workItem from="1587489401516" duration="384000" />
+      <workItem from="1587489804696" duration="3983000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="752" y="390" key="Github.ShareDialog" timestamp="1587060102196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="390" key="Github.ShareDialog/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587060102196" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1587059877879">
+    <state x="794" y="236" key="RiderGenerateDialog" timestamp="1587490933258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587059877879" />
+    <state x="794" y="236" key="RiderGenerateDialog/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587490933258" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1587489355085">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587489355085" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587488874312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587488874312" />
   </component>
 </project>

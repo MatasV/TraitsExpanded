@@ -6,8 +6,14 @@ namespace TraitsExpanded
 {
     public class TraitsExpandedSubModule : MBSubModuleBase
     {
+	    private readonly TraitSystemBehavior traitSystemBehavior = new TraitSystemBehavior();
 
-		/* Executed when game is loaded or initially started */
+	    protected override void OnApplicationTick(float dt)
+	    {
+		    TraitSystemBehavior.Tick();
+	    }
+
+	    /* Executed when game is loaded or initially started */
 		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
 		{
 			if (game.GameType is Campaign)
@@ -16,11 +22,11 @@ namespace TraitsExpanded
 				this.AddBehaviors(gameInitializer);
 			}
 		}
-
+		
 		/* The Behaviors we add */
 		private void AddBehaviors(CampaignGameStarter gameStarterObject)
 		{
-			//gameStarterObject.AddBehavior(new OurBehavior());
+			gameStarterObject.AddBehavior(traitSystemBehavior);
 		}
 	}
 }
