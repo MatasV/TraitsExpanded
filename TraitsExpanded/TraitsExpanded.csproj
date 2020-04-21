@@ -162,6 +162,9 @@
     <StartArguments>/singleplayer _MODULES_*Native*SandBoxCore*SandBox*StoryMode*$(ModName)*_MODULES_</StartArguments>
     <StartWorkingDirectory>$(GameBinRoot)</StartWorkingDirectory>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\TraitsExpanded\bin\Win64_Shipping_Client</OutputPath>
+  </PropertyGroup>
   <!-- Friendly error message in case someone forgets to set GameBinRoot in their Local -->
   <!-- todo: see if I can get this to run before any references are loaded -->
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

@@ -9,7 +9,6 @@
       <e p="README.md" t="Include" />
       <e p="Solution Items" t="Include" />
       <e p="TraitsExpanded" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
         <e p="CampaignStatusInfo.cs" t="Include" />
         <e p="Interfaces" t="Include">
           <e p="ITrait.cs" t="Include" />
@@ -26,6 +25,7 @@
             </e>
           </e>
         </e>
+        <e p="SubModule.xml" t="Include" />
         <e p="Traits" t="Include" />
         <e p="TraitSets" t="Include" />
         <e p="TraitsExpanded.csproj" t="IncludeRecursive" />
@@ -33,6 +33,9 @@
         <e p="TraitSystemBehavior.cs" t="Include" />
       </e>
       <e p="TraitsExpanded.sln" t="IncludeFlat" />
+    </e>
+    <e p="D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\TraitsExpanded\bin\Win64_Shipping_Client\net472\win-x64" t="ExcludeRecursive">
+      <e p="TraitsExpanded.dll" t="Include" />
     </e>
   </component>
 </project>
