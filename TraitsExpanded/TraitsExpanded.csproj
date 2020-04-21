@@ -12,6 +12,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Update="SubModule.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="SandBox.GauntletUI">
       <HintPath>$(SandboxModuleBinRoot)\SandBox.GauntletUI.dll</HintPath>
     </Reference>
