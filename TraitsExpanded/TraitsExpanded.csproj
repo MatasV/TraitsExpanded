@@ -142,8 +142,10 @@
       <HintPath>$(GameBinRoot)\TaleWorlds.TwoDimension.Standalone.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <!-- Friendly error message in case someone forgets to set GameBinRoot in their Local-->
+  <!-- Friendly error message in case someone forgets to set GameBinRoot in their Local -->
+  <!-- todo: see if I can get this to run before any references are loaded -->
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Error Condition="!Exists($(GameBinRoot))" Text="Game install directory '$(GameBinRoot)' does not exist. Please define the property GameBinRoot in LocalConfiguration.props to the local Bannerlord installation directory on your machine." />
+    <Error Text="Game install directory not defined. Check that your LocalConfiguration.props exists and sets the GameBinRoot property correctly. See: LocalConfiguration.props.example" Condition="('$(GameBinRoot)' == '')" />
+    <Error Text="Game install directory '$(GameBinRoot)' does not exist. Please define the property GameBinRoot in $(LocalConfigurationFile) to match the local Bannerlord installation directory on your machine." Condition="('$(GameBinRoot)' != '') AND !Exists($(GameBinRoot))" />
   </Target>
 </Project>

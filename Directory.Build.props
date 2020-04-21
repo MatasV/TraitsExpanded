@@ -2,5 +2,5 @@
   <PropertyGroup>
     <ModName>TraitsExpanded</ModName>
   </PropertyGroup>
-  <Import Project=".\LocalConfiguration.props" />
+  <Import Project="LocalConfiguration.props" Condition="Exists('LocalConfiguration.props')" />
 </Project>
