@@ -2,5 +2,16 @@
   <PropertyGroup>
     <ModName>TraitsExpanded</ModName>
   </PropertyGroup>
+  
   <Import Project="LocalConfiguration.props" Condition="Exists('LocalConfiguration.props')" />
+
+  <!-- The binroots for the vanilla modules and the mod module are defined to simplify references. -->
+  <PropertyGroup>
+    <BinRootFormat>$(GameInstallPath){0}\bin\Win64_Shipping_Client</BinRootFormat>
+    <GameBinRoot>$([System.String]::Format($(BinRootFormat), ""))</GameBinRoot>
+    <NativeModuleBinRoot>$([System.String]::Format($(BinRootFormat), "\Modules\Native"))</NativeModuleBinRoot>
+    <SandboxModuleBinRoot>$([System.String]::Format($(BinRootFormat), "\Modules\Sandbox"))</SandboxModuleBinRoot>
+    <ModModuleRoot>$(GameInstallPath)\Modules\$(ModName)</ModModuleRoot>
+    <ModModuleBinRoot>$(ModModuleRoot)\bin\Win64_Shipping_Client</ModModuleBinRoot>
+  </PropertyGroup>
 </Project>
