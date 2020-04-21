@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <!-- Configure GameInstallPath to be the directory path where the game is installed on your local machine. -->
+    <GameInstallPath>N:\Games\SteamLibrary\steamapps\common\Mount &amp;Blade II Bannerlord</GameInstallPath>
+    
+    <!-- The binroots for the vanilla modules and the mod module are defined to simplify references. -->
+    <BinRootFormat>$(GameInstallPath){0}\bin\Win64_Shipping_Client</BinRootFormat>
+    <GameBinRoot>$([System.String]::Format($(BinRootFormat), ""))</GameBinRoot>
+    <NativeModuleBinRoot>$([System.String]::Format($(BinRootFormat), "\Modules\Native"))</NativeModuleBinRoot>
+    <SandboxModuleBinRoot>$([System.String]::Format($(BinRootFormat), "\Modules\Sandbox"))</SandboxModuleBinRoot>
+    <ModModuleBinRoot>$([System.String]::Format($(BinRootFormat), $([System.String]::Concat("\Modules\", $(ModName))))</ModModuleBinRoot>
+  </PropertyGroup>
+</Project>
