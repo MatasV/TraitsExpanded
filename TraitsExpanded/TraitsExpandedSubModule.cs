@@ -1,16 +1,17 @@
 ﻿using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
+using TraitsExpanded.TraitSets;
 
 namespace TraitsExpanded
 {
     public class TraitsExpandedSubModule : MBSubModuleBase
     {
-	    private readonly TraitSystemBehavior traitSystemBehavior = new TraitSystemBehavior();
+	    private TraitSystemBehavior traitSystemBehavior;
 
 	    protected override void OnApplicationTick(float dt)
 	    {
-		    traitSystemBehavior.Tick();
+		    traitSystemBehavior?.Tick();
 	    }
 
 	    /* Executed when game is loaded or initially started */
@@ -26,6 +27,7 @@ namespace TraitsExpanded
 		/* The Behaviors we add */
 		private void AddBehaviors(CampaignGameStarter gameStarterObject)
 		{
+			traitSystemBehavior = new TraitSystemBehavior();
 			gameStarterObject.AddBehavior(traitSystemBehavior);
 		}
 	}
