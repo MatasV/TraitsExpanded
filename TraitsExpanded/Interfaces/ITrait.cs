@@ -9,9 +9,12 @@ namespace TraitsExpanded
         string Desc { get; set; }
         int Cost { get; set; }
         string IconPath { get; set; }
+        bool isActive { get; set; }
+        CharacterObject currentCharacter { get; set; }
+        void Init();
+        bool Activate(CharacterObject character);
+        bool Deactivate(CharacterObject character);
 
-        void Init(Hero hero);
-        bool Activate(Hero hero);
-        bool Deactivate(Hero hero);
+       
     }
 }
