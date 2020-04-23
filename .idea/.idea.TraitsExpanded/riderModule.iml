@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="RIDER_MODULE" version="4">
-  <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../.." />
-    <content url="file://D:/SteamLibrary/steamapps/common/Mount &amp; Blade II Bannerlord/Modules/TraitsExpanded/bin/Win64_Shipping_Client/net472/win-x64/TraitsExpanded.dll" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
