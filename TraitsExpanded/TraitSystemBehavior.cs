@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
 using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TraitsExpanded.TraitSets;
@@ -29,11 +28,15 @@ namespace TraitsExpanded
         public static GameTickCall OnGameTick;
 
         private static float MissionTickTime { get; } = 1f;
+
         private static float CampaignTickTime { get; } = 1f;
+
         private static float GameTickTime { get; } = 1f;
 
         private Timer MissionTickTimer { get; } = new Timer(Time.ApplicationTime, MissionTickTime, false);
+
         private Timer CampaignTickTimer { get; } = new Timer(Time.ApplicationTime, CampaignTickTime, false);
+
         private Timer GameTickTimer { get; } = new Timer(Time.ApplicationTime, GameTickTime, false);
 
         public TraitSystemBehavior()
@@ -211,11 +214,11 @@ namespace TraitsExpanded
 
                 if (!playerTraits.Contains(traitSet))
                 {
-                    Util.LogMessage($"The Player does not contain traitSet: {traitSet.ID}, adding to his traitSet list");
+                    Util.LogMessage($"The Player does not contain traitSet: {traitSet.Id}, adding to his traitSet list");
                     traitSet.Init(CharacterObject.PlayerCharacter);
                     playerTraits.Add(traitSet);
                 }
-                Util.LogMessage($"The Player already has the traitSet: {traitSet.ID}, will not be adding" );
+                Util.LogMessage($"The Player already has the traitSet: {traitSet.Id}, will not be adding" );
             }
             catch (Exception e)
             {

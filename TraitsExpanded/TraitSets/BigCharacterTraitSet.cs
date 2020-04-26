@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using TaleWorlds.CampaignSystem;
-using TaleWorlds.Core;
-using TaleWorlds.MountAndBlade.Diamond;
+﻿using TaleWorlds.CampaignSystem;
 using TraitsExpanded.Traits;
 
 namespace TraitsExpanded.TraitSets
 {
     public class BigCharacterTraitSet : TraitSet
     {
-        public override string ID { get; set; } = "BigCharacterTraitSet";
+        public override string Id { get; set; } = "BigCharacterTraitSet";
 
         public BigCharacterTraitSet(CharacterObject characterObject)
         {
@@ -23,7 +19,7 @@ namespace TraitsExpanded.TraitSets
             CurrentCharacter = character;
             if (CurrentCharacter != null)
             {
-                Util.LogMessage("BigCharacterTraitSet initialized for a given character!" + character.Name + " Activating!");
+                Util.LogMessage("BigCharacterTraitSet initialized for a given character! {0} Activating!", character.Name);
                 Activate();
             }
         }
