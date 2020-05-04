@@ -2,6 +2,9 @@
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
 using TraitsExpanded.TraitSets;
+using TaleWorlds.Localization;
+using TaleWorlds.Engine.Screens;
+using TraitsExpanded.GUI;
 
 namespace TraitsExpanded
 {
@@ -29,6 +32,16 @@ namespace TraitsExpanded
 		{
 			traitSystemBehavior = new TraitSystemBehavior();
 			gameStarterObject.AddBehavior(traitSystemBehavior);
+		}
+
+		/* Currently just for testing the GUI */
+		protected override void OnSubModuleLoad()
+		{
+			base.OnSubModuleLoad();
+			Module.CurrentModule.AddInitialStateOption(new InitialStateOption("TraitsExpandedGUI", new TextObject("TE GUI test", null), 9998, delegate ()
+			{
+				ScreenManager.PushScreen(new TraitSelectionGauntletScreen());
+			}, false));
 		}
 	}
 }
