@@ -176,7 +176,6 @@
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Copy SourceFiles="SubModule.xml" DestinationFolder="$(GameInstallPath)\Modules\$(ModName)" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="GUI\Prefabs\TraitSelection.xml" DestinationFolder="$(GameInstallPath)\Modules\$(ModName)\GUI\Prefabs" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(AssembliesToCopy)" DestinationFolder="$(ModModuleBinRoot)" SkipUnchangedFiles="true" />
   </Target>
 </Project>
