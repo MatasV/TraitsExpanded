@@ -6,4 +6,5 @@ namespace TraitsExpanded
     {
         public Campaign CurrentCampaign { get; set; } = Campaign.Current;
     }
+    
 }

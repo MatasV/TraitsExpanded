@@ -3,17 +3,26 @@ using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
 
 namespace TraitsExpanded
-{
-    public class TraitsExpandedSubModule : MBSubModuleBase
+{ 
+	public class TraitsExpandedSubModule : MBSubModuleBase
     {
 	    private TraitSystemBehavior traitSystemBehavior;
 
+	    private CampaignGameStarter gameStarter;
+	    
 	    protected override void OnApplicationTick(float dt)
 	    {
-		    traitSystemBehavior?.Tick();
+		    if (gameStarter != null && gameStarter.CampaignBehaviors.Contains(traitSystemBehavior))
+		    {
+			    traitSystemBehavior.Tick();
+		    }
 	    }
 
-	    /* Executed when game is loaded or initially started */
+	    /// <summary>
+	    /// Executed when game is loaded or initially started
+	    /// </summary>
+	    /// <param name="game"></param>
+	    /// <param name="gameStarterObject"></param>
 		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
 		{
 			if (game.GameType is Campaign)
@@ -23,11 +32,15 @@ namespace TraitsExpanded
 			}
 		}
 		
-		/* The Behaviors we add */
+	    /// <summary>
+	    /// The Behaviors we add
+	    /// </summary>
 		private void AddBehaviors(CampaignGameStarter gameStarterObject)
 		{
 			traitSystemBehavior = new TraitSystemBehavior();
+			gameStarter = gameStarterObject;
 			gameStarterObject.AddBehavior(traitSystemBehavior);
 		}
 	}
+	
 }

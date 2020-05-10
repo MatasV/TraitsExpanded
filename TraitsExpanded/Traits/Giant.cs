@@ -1,64 +1,90 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Reflection;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.Engine;
+using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.View;
 
 namespace TraitsExpanded.Traits
 {
     public class Giant : MBSubModuleBase, ITrait
     {
-        public string Name { get; set; } = "Giant";
-        public string Desc { get; set; } = "You are quite bigger than your average person";
-        public int Cost { get; set; } = 5;
-        public string IconPath { get; set; } = "";
+        public string Name { get; } = "Giant";
+        
+        public string Description { get; } = "You are quite bigger than your average person";
+        
+        public int Cost { get; } = 5;
+        
+        public string IconPath { get; } = "";
 
-        public bool isActive { get; set; }
-        public CharacterObject currentCharacter { get; set; }
+        public bool IsActive { get; private set; }
+        
+        public CharacterObject CurrentCharacter { get; private set; }
 
         private bool enlarged;
         
         public Giant(CharacterObject character)
         {
-            Init();
-        }
-        
-        public void Init()
-        {
+            CurrentCharacter = character;
             InformationManager.DisplayMessage(new InformationMessage("Trait has been initialized for character: "));
         }
+
         public bool Activate(CharacterObject character)
         {
-            if (character == null) return false;
+            if (character == null || IsActive) return false;
             
-            currentCharacter = character;
-            isActive = true;
+            CurrentCharacter = character;
+            IsActive = true;
             CampaignEvents.MissionTickEvent.AddNonSerializedListener(this, ChangeCharacterBuild);
             CampaignEvents.OnMissionEndedEvent.AddNonSerializedListener(this, mission => { enlarged = false; });
-            InformationManager.DisplayMessage(new InformationMessage("Trait has been activated for character: " + character?.Name ));
+            InformationManager.DisplayMessage(new InformationMessage("Trait has been activated for character: " + character.Name ));
             return true;
         }
 
         private void ChangeCharacterBuild(float tick)
         {
-            if (isActive)
+            if (IsActive && !enlarged) //NOT DONE, CAN'T FIGURE IT OUT
             {
-                if (Mission.Current != null && !enlarged && Mission.Current.Agents.Any(agent => agent.Name == currentCharacter.ToString()))
+                if (Mission.Current != null && !enlarged && Mission.Current.Agents.Any(agent => agent.Name == CurrentCharacter.ToString()))
                 {
-                    Util.LogMessage("Activating Giant Trait");
-
+                    
+                    
                     Agent agent = Mission.Current.Agents
-                        .First(agent1 => agent1.Character.Id == currentCharacter.Id);
+                        .First(agent1 => agent1.Name == CurrentCharacter.Name.ToString());
 
+                    if (agent.AgentVisuals == null) return;
+                    //var t = typeof ( TaleWorlds.MountAndBlade.View.CharacterSpawner);
+                    //var assembly = Assembly.Load(t.Assembly.GetName());
+                    //string s = t.Assembly.FullName.ToString();
+                    //CharacterSpawner spawner = 
+                    //if (assembly == null) return;
+                   // var obj = agent.AgentVisuals.GetType().GetMethod("GetFrame")
+                       // .GetType().GetMethod("Scale");
                     
-                    enlarged = true;
-                    
+                    //obj.Invoke()
+                    agent.AgentVisuals.GetFrame().Scale(new Vec3(20f, 20f, 20f, 1f));
+                    agent.UpdateAgentProperties();
+                    agent.UpdateAgentStats();
+                    agent.UpdateCustomDrivenProperties();
+                    agent.UpdateWeapons();
+                        enlarged = true;
+                        Util.LogMessage("Activating Giant Trait");
+
                 }
             }
         }
-        
+        private Assembly GetAssemblyByName(string name)
+        {
+            return AppDomain.CurrentDomain.GetAssemblies().
+                SingleOrDefault(assembly => assembly.GetName().Name == name);
+        }
+
         public bool Deactivate(CharacterObject character)
         {
-            isActive = false;
+            IsActive = false;
             enlarged = false;
             InformationManager.DisplayMessage(new InformationMessage("Trait has been deactivated for character: " + character?.Name ));
             return true;
