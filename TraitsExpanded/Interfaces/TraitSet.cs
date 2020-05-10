@@ -1,23 +1,34 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text.Json;
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.Core;
-using TaleWorlds.MountAndBlade;
 
 namespace TraitsExpanded
 {
     public abstract class TraitSet
     {
+        public abstract Guid Id { get; }
+
+        public abstract string Name { get; }
+
+        public abstract int Version { get; }
+
         public virtual List<ITrait> Traits { get; set; } = new List<ITrait>();
-        public virtual string ID { get; set; }
+
         public virtual int CurrentTraitIndex { get; set; } = 0;
+
         public virtual NPCRestrictionEnum NPCRestriction { get; set; } = NPCRestrictionEnum.NONE;
+
         public virtual bool IsActive { get; set; } = false;
+
         public virtual CharacterObject CurrentCharacter { get; set; }
+
+        public virtual void SerializeCustomState(Utf8JsonWriter writer) { }
 
         public virtual void Init(CharacterObject character)
         {
             CurrentCharacter = character;
-            Util.LogMessage($"{ID} initialized");
+            Util.LogMessage($"{Id} initialized");
         }
 
         public virtual bool Activate()
@@ -104,6 +115,5 @@ namespace TraitsExpanded
         public virtual void GameTick(GameStatusInfo statusInfo)
         {
         }
-        
     }
 }

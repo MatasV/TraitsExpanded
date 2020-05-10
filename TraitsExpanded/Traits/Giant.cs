@@ -8,12 +8,16 @@ namespace TraitsExpanded.Traits
     public class Giant : MBSubModuleBase, ITrait
     {
         public string Name { get; set; } = "Giant";
-        public string Desc { get; set; } = "You are quite bigger than your average person";
+
+        public string Description { get; set; } = "You are quite bigger than your average person";
+
         public int Cost { get; set; } = 5;
+
         public string IconPath { get; set; } = "";
 
-        public bool isActive { get; set; }
-        public CharacterObject currentCharacter { get; set; }
+        public bool IsActive { get; set; }
+
+        public CharacterObject CurrentCharacter { get; set; }
 
         private bool enlarged;
         
@@ -26,12 +30,13 @@ namespace TraitsExpanded.Traits
         {
             InformationManager.DisplayMessage(new InformationMessage("Trait has been initialized for character: "));
         }
+
         public bool Activate(CharacterObject character)
         {
             if (character == null) return false;
             
-            currentCharacter = character;
-            isActive = true;
+            CurrentCharacter = character;
+            IsActive = true;
             CampaignEvents.MissionTickEvent.AddNonSerializedListener(this, ChangeCharacterBuild);
             CampaignEvents.OnMissionEndedEvent.AddNonSerializedListener(this, mission => { enlarged = false; });
             InformationManager.DisplayMessage(new InformationMessage("Trait has been activated for character: " + character?.Name ));
@@ -40,14 +45,14 @@ namespace TraitsExpanded.Traits
 
         private void ChangeCharacterBuild(float tick)
         {
-            if (isActive)
+            if (IsActive)
             {
-                if (Mission.Current != null && !enlarged && Mission.Current.Agents.Any(agent => agent.Name == currentCharacter.ToString()))
+                if (Mission.Current != null && !enlarged && Mission.Current.Agents.Any(agent => agent.Name == CurrentCharacter.ToString()))
                 {
                     Util.LogMessage("Activating Giant Trait");
 
                     Agent agent = Mission.Current.Agents
-                        .First(agent1 => agent1.Character.Id == currentCharacter.Id);
+                        .First(agent1 => agent1.Character.Id == CurrentCharacter.Id);
 
                     
                     enlarged = true;
@@ -58,7 +63,7 @@ namespace TraitsExpanded.Traits
         
         public bool Deactivate(CharacterObject character)
         {
-            isActive = false;
+            IsActive = false;
             enlarged = false;
             InformationManager.DisplayMessage(new InformationMessage("Trait has been deactivated for character: " + character?.Name ));
             return true;

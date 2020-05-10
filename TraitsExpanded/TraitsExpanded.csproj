@@ -174,6 +174,9 @@
   <ItemGroup>
     <AssembliesToCopy Include="$(OutputPath)\*.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="4.7.1" />
+  </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Copy SourceFiles="SubModule.xml" DestinationFolder="$(GameInstallPath)\Modules\$(ModName)" SkipUnchangedFiles="true" />
     <Copy SourceFiles="GUI\Prefabs\TraitSelection.xml" DestinationFolder="$(GameInstallPath)\Modules\$(ModName)\GUI\Prefabs" SkipUnchangedFiles="true" />

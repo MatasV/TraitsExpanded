@@ -1,14 +1,11 @@
 ﻿using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
-using TraitsExpanded.TraitSets;
-using TaleWorlds.Localization;
-using TaleWorlds.Engine.Screens;
-using TraitsExpanded.GUI;
+
 
 namespace TraitsExpanded
 {
-    public class TraitsExpandedSubModule : MBSubModuleBase
+	public class TraitsExpandedSubModule : MBSubModuleBase
     {
 	    private TraitSystemBehavior traitSystemBehavior;
 
@@ -17,7 +14,11 @@ namespace TraitsExpanded
 		    traitSystemBehavior?.Tick();
 	    }
 
-	    /* Executed when game is loaded or initially started */
+		/// <summary>
+		/// Executed when game is loaded or initially started
+		/// </summary>
+		/// <param name="game"></param>
+		/// <param name="gameStarterObject"></param>
 		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
 		{
 			if (game.GameType is Campaign)
@@ -26,8 +27,10 @@ namespace TraitsExpanded
 				this.AddBehaviors(gameInitializer);
 			}
 		}
-		
-		/* The Behaviors we add */
+
+		/// <summary>
+		/// The Behaviors we add
+		/// </summary>
 		private void AddBehaviors(CampaignGameStarter gameStarterObject)
 		{
 			traitSystemBehavior = new TraitSystemBehavior();
