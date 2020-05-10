@@ -150,6 +150,12 @@
     <Reference Include="TaleWorlds.TwoDimension.Standalone">
       <HintPath>$(GameBinRoot)\TaleWorlds.TwoDimension.Standalone.dll</HintPath>
     </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.GauntletUI">
+      <HintPath>$(NativeModuleBinRoot)\TaleWorlds.MountAndBlade.GauntletUI.dll</HintPath>
+    </Reference>
+    <Reference Include="aleWorlds.MountAndBlade.View">
+      <HintPath>$(NativeModuleBinRoot)\TaleWorlds.MountAndBlade.View.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Traits" />

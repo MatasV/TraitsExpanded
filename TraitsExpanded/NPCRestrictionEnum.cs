@@ -2,9 +2,10 @@
 {
     public enum NPCRestrictionEnum
     {
-        NONE,
-        LORD,
-        PLAYER,
-        HORSE
+        NONE = 0,
+        LORD = 1,
+        PLAYER = 2,
+        HORSE = 3
     }
+    
 }

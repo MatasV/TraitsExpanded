@@ -6,4 +6,5 @@ namespace TraitsExpanded
     {
         public Game CurrentGame { get; set; }= Game.Current;
     }
+    
 }
