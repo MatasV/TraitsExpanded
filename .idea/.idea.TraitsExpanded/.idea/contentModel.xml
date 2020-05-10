@@ -10,10 +10,9 @@
       <e p="Solution Items" t="Include" />
       <e p="TraitsExpanded" t="IncludeRecursive">
         <e p="CampaignStatusInfo.cs" t="Include" />
-        <e p="GameStatusInfo.cs" t="Include" />
         <e p="Interfaces" t="Include">
           <e p="ITrait.cs" t="Include" />
-          <e p="TraitSet.cs" t="Include" />
+          <e p="ITraitSet.cs" t="Include" />
         </e>
         <e p="MissionStatusInfo.cs" t="Include" />
         <e p="NPCRestrictionEnum.cs" t="Include" />
@@ -27,16 +26,11 @@
           </e>
         </e>
         <e p="SubModule.xml" t="Include" />
-        <e p="Traits" t="Include">
-          <e p="Giant.cs" t="Include" />
-        </e>
-        <e p="TraitSets" t="Include">
-          <e p="BigCharacterTraitSet.cs" t="Include" />
-        </e>
+        <e p="Traits" t="Include" />
+        <e p="TraitSets" t="Include" />
         <e p="TraitsExpanded.csproj" t="IncludeRecursive" />
         <e p="TraitsExpandedSubModule.cs" t="Include" />
         <e p="TraitSystemBehavior.cs" t="Include" />
-        <e p="Util.cs" t="Include" />
       </e>
       <e p="TraitsExpanded.sln" t="IncludeFlat" />
     </e>

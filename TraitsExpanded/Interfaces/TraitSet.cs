@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
@@ -8,59 +7,20 @@ namespace TraitsExpanded
 {
     public abstract class TraitSet
     {
-        public abstract string Name { get; }
-        
-        protected virtual List<ITrait> Traits { get; } = new List<ITrait>();
-        
-        public virtual string Id { get; }
-        
-        public virtual int CurrentTraitIndex { get; protected set; } = 0;
-        
-        
-        public virtual NPCRestrictionEnum NPCRestriction { get; } = NPCRestrictionEnum.NONE;
-        
-        public virtual bool IsActive { get; protected set; } = false;
-        
-        public virtual CharacterObject CurrentCharacter { get; protected set; }
-        
-        public TraitSet(CharacterObject character)
+        public virtual List<ITrait> Traits { get; set; } = new List<ITrait>();
+        public virtual string ID { get; set; }
+        public virtual int CurrentTraitIndex { get; set; } = 0;
+        public virtual NPCRestrictionEnum NPCRestriction { get; set; } = NPCRestrictionEnum.NONE;
+        public virtual bool IsActive { get; set; } = false;
+        public virtual CharacterObject CurrentCharacter { get; set; }
+
+        public virtual void Init(CharacterObject character)
         {
             CurrentCharacter = character;
-            Util.LogMessage($"{Id} initialized");
-            
-            if (CurrentCharacter != null)
-            {
-                Util.LogMessage($"{Id} initialized for a given character! {character.Name} Activating!");
-                Activate();
-            }
+            Util.LogMessage($"{ID} initialized");
         }
 
-        protected TraitSet()
-        {
-            Util.LogMessage($"{Id} initialized");
-        }
-
-        public virtual bool Activate(CharacterObject character)
-        {
-            var succeeded = false;
-
-            if (character != CurrentCharacter) CurrentCharacter = character;
-            
-            if (Traits.Count > 0 && CurrentCharacter != null)
-            {
-                succeeded = Traits[CurrentTraitIndex].Activate(CurrentCharacter);
-                IsActive = true;
-            }
-            else
-            {
-                IsActive = false;
-                succeeded = true;
-            }
-
-            return succeeded;
-        }
-
-        protected virtual bool Activate()
+        public virtual bool Activate()
         {
             var succeeded = false;
 
@@ -78,9 +38,6 @@ namespace TraitsExpanded
             return succeeded;
         }
 
-        public IEnumerable<ITrait> GetPositiveTraits() => Traits.Where(trait => trait.Cost >= 0).ToList();
-        public IEnumerable<ITrait> GetNegativeTraits() => Traits.Where(trait => trait.Cost < 0).ToList();
-        
         public virtual bool Deactivate()
         {
             var succeeded = false;
@@ -149,5 +106,4 @@ namespace TraitsExpanded
         }
         
     }
-    
 }

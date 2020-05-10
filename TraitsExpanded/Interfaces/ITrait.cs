@@ -2,26 +2,19 @@
 
 namespace TraitsExpanded
 {
-    /// <summary>
-    /// Public interface for Trait implementations
-    /// </summary>
+    //Interface for the Trait class
     public interface ITrait
     {
-        string Name { get;}
-        
-        string Description { get; }
-        
-        int Cost { get; }
-        
-        string IconPath { get; }
-        
-        bool IsActive { get; }
-        
-        CharacterObject CurrentCharacter { get; }
-        
+        string Name { get; set; }
+        string Desc { get; set; }
+        int Cost { get; set; }
+        string IconPath { get; set; }
+        bool isActive { get; set; }
+        CharacterObject currentCharacter { get; set; }
+        void Init();
         bool Activate(CharacterObject character);
-        
         bool Deactivate(CharacterObject character);
+
+       
     }
-    
 }

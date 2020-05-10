@@ -8,11 +8,5 @@ namespace TraitsExpanded
         {
             InformationManager.DisplayMessage(new InformationMessage(message));
         }
-        
-        public static void LogMessage(string message, params object[] args)
-        {
-            InformationManager.DisplayMessage(new InformationMessage(string.Format(message, args)));
-        }
     }
-    
 }

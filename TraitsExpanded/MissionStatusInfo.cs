@@ -6,5 +6,4 @@ namespace TraitsExpanded
     {
         private Mission CurrentMission { get; set; } = Mission.Current;
     }
-    
 }
