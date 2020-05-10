@@ -1,13 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text.Json;
 using TaleWorlds.CampaignSystem;
 
 namespace TraitsExpanded
 {
     public abstract class TraitSet
     {
-        public virtual List<ITrait> Traits { get; set; } = new List<ITrait>();
+        public abstract Guid Id { get; }
 
-        public virtual string Id { get; set; }
+        public abstract string Name { get; }
+
+        public abstract int Version { get; }
+
+        public virtual List<ITrait> Traits { get; set; } = new List<ITrait>();
 
         public virtual int CurrentTraitIndex { get; set; } = 0;
 
@@ -16,6 +22,8 @@ namespace TraitsExpanded
         public virtual bool IsActive { get; set; } = false;
 
         public virtual CharacterObject CurrentCharacter { get; set; }
+
+        public virtual void SerializeCustomState(Utf8JsonWriter writer) { }
 
         public virtual void Init(CharacterObject character)
         {
