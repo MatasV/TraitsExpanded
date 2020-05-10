@@ -11,33 +11,64 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/98DA2062-F8D5-40E1-9AAE-F2038A83C747/f2/016e357f/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE88AFFE-5359-4941-9A68-E4FC007D6B5E/04/961d0dab/TickManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/52/16c55f45/DynamicBodyProperties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/ac/48919f25/SkeletonScale.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/Util.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/b5/2b74530b/Game.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/c9/5ff074e8/HorseComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/ff/bed79337/RuntimeAssembly.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/4b/38283f72/CharacterObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/Traits/Giant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/TraitSets/BigCharacterTraitSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/47/e6d7f214/IGameStateListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06D5AA50-7057-4CE0-A8BC-06175A445120/d9/f0cc506f/Agent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/GameStatusInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/a2/c09addf6/Campaign.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06D5AA50-7057-4CE0-A8BC-06175A445120/b4/53c9c29a/Mission.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TraitsExpanded/Interfaces/ITrait.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/75/e9709e6b/CharacterTraits.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/be/f5a56be5/CharacterObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8C00275-B7BA-49A6-A421-2084AEF42361/8e/e20bd7e6/CharacterSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/7d/54963076/TraitObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE88AFFE-5359-4941-9A68-E4FC007D6B5E/04/961d0dab/TickManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/cc/0c4e0bdb/IAgentOriginBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TraitsExpanded/CampaignStatusInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/0a/d5ec2f41/GameState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8C00275-B7BA-49A6-A421-2084AEF42361/6c/4e82146b/AgentVisuals.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TraitsExpanded/NPCRestrictionEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TraitsExpanded/Interfaces/ITraitSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TraitsExpanded/Interfaces/TraitSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TraitsExpanded/TraitsExpandedSubModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/fe/8b52f678/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C074160-DD1A-4D91-9B45-B6E4C27A3BAC/e1/ef4156e5/Path.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06D5AA50-7057-4CE0-A8BC-06175A445120/5b/343be0f5/MBAgentVisuals.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TraitsExpanded/TraitSystemBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/b5/2b74530b/Game.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06D5AA50-7057-4CE0-A8BC-06175A445120/7d/0a02c2b8/IMBAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/c7/1b175985/CampaignEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE2D4E21-4397-4BC4-97E9-B7F08B4C8431/00/7283584a/Vec3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06D5AA50-7057-4CE0-A8BC-06175A445120/2f/83eaff9d/MBAPI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TraitsExpanded/MissionStatusInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/4b/38283f72/CharacterObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06D5AA50-7057-4CE0-A8BC-06175A445120/49/6902b60f/GameLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/944C8F27-9EA4-40A6-B929-177F674D3BF8/c6/3d7ef800/BodyProperties.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/02/96746ca9/BackstoryCampaignBehavior.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/a2/c09addf6/Campaign.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F7B1E06-3611-4964-948E-E59CA08C1B15/91/803c87c8/IMbEvent`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TraitsExpanded/TraitsExpandedMain.cs" />
         <option value="$PROJECT_DIR$/TraitsExpanded/ITrait.cs" />
-        <option value="$PROJECT_DIR$/TraitsExpanded/NPCRestrictionEnum.cs" />
         <option value="$PROJECT_DIR$/TraitsExpanded/ITraitSet.cs" />
         <option value="$PROJECT_DIR$/TraitsExpanded/CampaignStatusInfo.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/GameStatusInfo.cs" />
         <option value="$PROJECT_DIR$/TraitsExpanded/MissionStatusInfo.cs" />
-        <option value="$PROJECT_DIR$/TraitsExpanded/TraitsExpandedSubModule.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/Interfaces/ITrait.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/NPCRestrictionEnum.cs" />
         <option value="$PROJECT_DIR$/TraitsExpanded/TraitSystemBehavior.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/Traits/Giant.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/TraitsExpandedSubModule.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/Util.cs" />
+        <option value="$PROJECT_DIR$/TraitsExpanded/Interfaces/TraitSet.cs" />
       </list>
     </option>
   </component>
@@ -49,7 +80,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
@@ -105,6 +138,8 @@
       <workItem from="1587488936619" duration="422000" />
       <workItem from="1587489401516" duration="384000" />
       <workItem from="1587489804696" duration="3983000" />
+      <workItem from="1588085130068" duration="1418000" />
+      <workItem from="1589097561667" duration="1267000" />
     </task>
     <servers />
   </component>
@@ -118,7 +153,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -133,6 +170,86 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="390" key="Github.ShareDialog/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587060102196" />
+    <state width="937" height="48" key="GridCell.Tab.0.bottom" timestamp="1587752874649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="48" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874649" />
+    <state width="937" height="48" key="GridCell.Tab.0.center" timestamp="1587752874649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="48" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874649" />
+    <state width="937" height="48" key="GridCell.Tab.0.left" timestamp="1587752874649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="48" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874649" />
+    <state width="937" height="48" key="GridCell.Tab.0.right" timestamp="1587752874649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="937" height="48" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874649" />
+    <state width="1597" height="312" key="GridCell.Tab.1.bottom" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.1.center" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.1.left" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.1.right" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.2.bottom" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.2.center" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.2.center/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.2.left" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.2.left/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.2.right" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.2.right/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.3.bottom" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.3.center" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.3.center/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.3.left" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.3.left/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.3.right" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.3.right/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.4.bottom" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.4.bottom/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.4.center" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.4.center/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.4.left" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.4.left/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
+    <state width="1597" height="312" key="GridCell.Tab.4.right" timestamp="1587752874643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1597" height="312" key="GridCell.Tab.4.right/0.0.1920.1040/1920.-74.2560.1400@0.0.1920.1040" timestamp="1587752874643" />
     <state x="794" y="236" key="RiderGenerateDialog" timestamp="1587490933258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
