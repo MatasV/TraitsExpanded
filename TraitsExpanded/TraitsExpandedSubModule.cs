@@ -1,8 +1,6 @@
 ﻿using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
-using TraitsExpanded.TraitSets;
 
 namespace TraitsExpanded
 { 
