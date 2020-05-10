@@ -2,6 +2,7 @@
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
 
+
 namespace TraitsExpanded
 {
 	public class TraitsExpandedSubModule : MBSubModuleBase
@@ -34,6 +35,16 @@ namespace TraitsExpanded
 		{
 			traitSystemBehavior = new TraitSystemBehavior();
 			gameStarterObject.AddBehavior(traitSystemBehavior);
+		}
+
+		/* Currently just for testing the GUI */
+		protected override void OnSubModuleLoad()
+		{
+			base.OnSubModuleLoad();
+			Module.CurrentModule.AddInitialStateOption(new InitialStateOption("TraitsExpandedGUI", new TextObject("TE GUI test", null), 9998, delegate ()
+			{
+				ScreenManager.PushScreen(new TraitSelectionGauntletScreen());
+			}, false));
 		}
 	}
 }
